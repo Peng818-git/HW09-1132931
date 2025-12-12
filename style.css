@@ -1,33 +1,48 @@
-body{
-  font-family: "Microsoft JhengHei", sans-serif;
-  text-align: center;
-  background-color: #f2f2f2;
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #333;
 }
+
 h1 {
-  color: #333;
+    color: #333;
 }
+
+/* 棋盤樣式：使用 Grid 排版 */
 .board {
-  width: 300px;
-  height: 300px;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
 }
+
+/* 格子樣式 */
 .cell {
-  background-color: white;
-  border: 2px solid #888;
-  font-size: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: white;
+    border: 2px solid #888;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+/* 滑鼠懸停效果 */
 .cell:hover {
-  background-color: #e0e0e0;
+    background-color: #e0e0e0;
 }
+
 .controls {
-  margin-top: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
 }
