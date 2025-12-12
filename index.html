@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1132931-HW09</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>XO 對電腦棋</h1>
-    <div id="status">玩家(X)先手</div>
-    
-    <div id="board" class="board"></div>
-    
-    <div class="controls">
-        <button onclick="resetGame()">重開一局</button>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <div class="status-box">
+            <span id="status">玩家 (X) 準備</span>
+        </div>
+        
+        <div class="game-area">
+            <div id="board" class="board">
+                <div id="winLine" class="winning-line"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button onclick="resetGame()" class="btn-restart">重來一局 ↺</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
